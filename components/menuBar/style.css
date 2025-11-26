@@ -1,0 +1,27 @@
+:root {
+  --menu-bar-bg: #05145a;
+  --menu-bar-color: #fff;
+  --menu-bar-height-max: calc(100vh - var(--menu-bar-height));
+  --menu-bar-dropdown-bg: #191e46;
+}
+
+.AccordionTrigger svg.lucide {
+  display: none;
+}
+
+.AccordionTrigger > .icon-accordion {
+  padding: 5px;
+  background: #1e2359;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 100ms;
+  color: #f6d11a;
+  margin-right: 5px;
+}
+.AccordionTrigger[data-state="open"] > .icon-accordion {
+  transform: rotate(45deg);
+}

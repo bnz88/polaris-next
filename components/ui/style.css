@@ -1,0 +1,65 @@
+@reference "tailwindcss";
+@layer base {
+  .article_1 {
+    @apply relative block w-full;
+  }
+  .article_1_img {
+    @apply w-full rounded-sm;
+  }
+  .article_1_title {
+    @apply whitespace-normal font-bold px-2 py-2 absolute block w-full left-0 right-0 bottom-0 bg-gradient-to-t from-[#000] to-[#000]/0 rounded-sm;
+  }
+  .article_1_desc {
+    @apply hidden;
+  }
+
+  .article_2 {
+    @apply relative block w-full;
+  }
+  .article_2_img {
+    @apply w-full;
+  }
+  .article_2_title {
+    @apply whitespace-normal mt-2  block w-full font-bold;
+  }
+  .article_2_desc {
+    @apply mt-1 text-[12px] font-light;
+  }
+
+  .article_3 {
+    @apply relative block w-full;
+  }
+  .article_3_img {
+    @apply w-full;
+  }
+  .article_3_title {
+    @apply whitespace-normal mt-2  block w-full text-[12px];
+  }
+  .article_3_desc {
+    @apply hidden;
+  }
+
+  .article_4 {
+    @apply relative block w-full flex gap-3;
+  }
+  .article_4_img {
+    @apply w-full;
+  }
+  .article_4_title {
+    @apply whitespace-normal   block w-full text-[12px];
+  }
+  .article_4_desc {
+    @apply hidden;
+  }
+
+  .seofooter {
+    @apply p-4 bg-[#05145a] text-[#8488a4] *:mb-3;
+  }
+  .seofooter h1 {
+    @apply uppercase font-bold;
+  }
+  .seofooter > * {
+    line-height: 16px;
+    @apply text-[11px];
+  }
+}
