@@ -22,9 +22,16 @@ export default function Home() {
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem
                 key={index}
-                className="bg-[url(/assets/img-backgroundhome.png)] bg-cover pb-[258px]"
+                className="bg-[#000] bg-cover pb-[258px] relative"
               >
-                <div className="p-3 pb-0 flex justify-evenly items-center">
+                <Image
+                  src="/assets/img-backgroundhome.png"
+                  alt="bg1 slide"
+                  sizes="responsive"
+                  fill={true}
+                  className="absolute left-0 top-0 right-0 bottom-0 z-012"
+                ></Image>
+                <div className="p-3 pb-0 flex justify-evenly items-center relative z-10">
                   <div className="pl-5">
                     <h2 className="text-[32px]/10 font-bold text-shadow-[1px_1px_4px_rgb(0_0_0_/1)] uppercase">
                       Welcome <br />
