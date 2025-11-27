@@ -4,7 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import SideBar from "./SideBar";
 
+import { useTranslations } from "next-intl";
+
 const MenuBar = () => {
+  const t = useTranslations("menuBar");
   return (
     <div className="menubar block  fixed bottom-0 left-0 z-50 w-full h-(--menu-bar-height) text-(--menu-bar-color) bg-(--menu-bar-bg) ">
       <div className="grid h-full max-w-lg grid-cols-5 *:text-nowrap  mx-auto font-medium">
@@ -20,7 +23,7 @@ const MenuBar = () => {
               alt="Beranda"
               sizes="100vw"
             ></Image>
-            Beranda
+            {t("label.home")}
           </span>
         </Link>
 
@@ -51,7 +54,7 @@ const MenuBar = () => {
               alt="Promosi"
               sizes="100vw"
             ></Image>
-            Daftar
+            {t("label.register")}
           </span>
         </Link>
         <Link

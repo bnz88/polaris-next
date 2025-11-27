@@ -1,4 +1,7 @@
+import createNextIntlPlugin from "next-intl/plugin";
+
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
@@ -10,5 +13,6 @@ const nextConfig = {
     domains: ["p56pngklqgj5.imagehost.cloud"],
   },
 };
-
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);
+//export default nextConfig;

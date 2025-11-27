@@ -1,5 +1,6 @@
 import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
+import { NextIntlClientProvider } from "next-intl";
 import HeaderDefault from "@/components/headers/default/HeaderDefault";
 import FooterDefault from "@/components/footers/default/FooterDefault";
 
@@ -24,20 +25,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${robotoFont.variable} antialiased bodyheight`}>
-        <header className="bg-(--header-bg) text-(--header-color) sticky top-0 z-50">
-          <HeaderDefault></HeaderDefault>
-        </header>
-        <Marque></Marque>
-        <main>{children}</main>
-        <footer>
-          <Suspense>
-            <FooterDefault></FooterDefault>
-          </Suspense>
-        </footer>
-        <MenuBar></MenuBar>
-      </body>
-    </html>
+    <Suspense>
+      <NextIntlClientProvider>
+        <html lang="en">
+          <body className={`${robotoFont.variable} antialiased bodyheight`}>
+            <header className="bg-(--header-bg) text-(--header-color) sticky top-0 z-50">
+              <HeaderDefault></HeaderDefault>
+            </header>
+            <Marque></Marque>
+
+            <main>{children}</main>
+            <footer>
+              <FooterDefault></FooterDefault>
+            </footer>
+            <MenuBar></MenuBar>
+          </body>
+        </html>
+      </NextIntlClientProvider>{" "}
+    </Suspense>
   );
 }
