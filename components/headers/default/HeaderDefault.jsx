@@ -19,8 +19,7 @@ export default function HeaderDefault() {
       </div>
       <div>
         <DropdownMenu>
-          <DropdownMenuTrigger>
-            {" "}
+          <DropdownMenuTrigger className="mr-1">
             <FontAwesomeIcon icon={faUser} />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="p-1 bg-(--header-dropdown-bg)">

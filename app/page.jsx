@@ -20,7 +20,10 @@ export default function Home() {
         <Carousel className="w-full">
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="bg-[#9b0023] pb-[258px]">
+              <CarouselItem
+                key={index}
+                className="bg-[url(/assets/img-backgroundhome.png)] bg-cover pb-[258px]"
+              >
                 <div className="p-3 pb-0 flex justify-evenly items-center">
                   <div className="pl-5">
                     <h2 className="text-[32px]/10 font-bold text-shadow-[1px_1px_4px_rgb(0_0_0_/1)] uppercase">
