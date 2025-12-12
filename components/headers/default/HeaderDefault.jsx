@@ -2,6 +2,7 @@ import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Logo from "@/components/ui/Logo";
+import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +19,10 @@ export default function HeaderDefault() {
         <Logo></Logo>
       </div>
       <div>
-        <DropdownMenu>
+        <Link href="/login">
+          <FontAwesomeIcon icon={faUser} />
+        </Link>
+        {/* <DropdownMenu>
           <DropdownMenuTrigger className="mr-1">
             <FontAwesomeIcon icon={faUser} />
           </DropdownMenuTrigger>
@@ -33,7 +37,7 @@ export default function HeaderDefault() {
               Deposit Bank
             </DropdownMenuItem>
           </DropdownMenuContent>
-        </DropdownMenu>
+        </DropdownMenu> */}
       </div>
     </div>
   );

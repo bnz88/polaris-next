@@ -1,8 +1,90 @@
 {
-  "menuBar": {
-    "label": {
-      "home": "Beranda",
-      "register": "Daftar"
-    }
-  }
+	"ERR": {
+		"FORM": {
+			"INPUT": {
+				"COMMON": {
+					"REQUIRED": "Harus di isi",
+					"MINLENGTH": "Minimal {1} karakter",
+					"MAXLENGTH": "Maximal {1} karakter",
+					"MIN": "Jumlah Minimal sebesar {1} ",
+					"MAX": "Jumlah Maximal sebesar {1} "
+				},
+				"PATTERN": {
+					"FIRSTNAME": "Hanya boleh huruf",
+					"PHONE": "Masukkan nomor HP yang benar",
+					"EMAIL": "Masukkan nomor email yang benar"
+				}
+			}
+		}
+	},
+	"APP": {
+		"COMPONENTS": {
+			"FORM": {
+				"COMMON": {
+					"DATE": {
+						"DAY": "Hari",
+						"MONTH": "Bulan",
+						"YEAR": "Tahun"
+					},
+					"MONTHS": {
+						"1": "Januari",
+						"2": "Febuari",
+						"3": "Maret",
+						"4": "April",
+						"5": "Mei",
+						"6": "Juni",
+						"7": "July",
+						"8": "Agustus",
+						"9": "September",
+						"10": "Oktober",
+						"11": "November",
+						"12": "Desember"
+					}
+				}
+			}
+		}
+	},
+	"REGISTERFORM": {
+		"INPUT": {
+			"FIRSTNAME": {
+				"LABEL": "Nama depan",
+				"PLACEHOLDER": "isi nama depan",
+				"INFO": "isi nama depan saja"
+			},
+			"AMOUNT": {
+				"LABEL": "Jumlah",
+				"PLACEHOLDER": "Jumlah placeholder",
+				"INFO": "Jumlah info"
+			},
+			"BIRTHDATE": {
+				"LABEL": "Tanggal lahir",
+				"PLACEHOLDER": "Birthday",
+				"INFO": "Masukkan tanggal lahir"
+			},
+			"PHONE": {
+				"LABEL": "No HP",
+				"PLACEHOLDER": "Isi No HP",
+				"INFO": "Isi No HP saja"
+			},
+			"EMAIL": {
+				"LABEL": "Email",
+				"PLACEHOLDER": "isi Email",
+				"INFO": "isi Email saja"
+			}
+		}
+	},
+	"LOGINFORM": {
+		"INPUT": {
+			"USERNAME": {
+				"LABEL": "ID Pemain",
+				"PLACEHOLDER": "Masukkan ID Pemain",
+				"INFO": "Masukkan ID Pemain"
+			},
+			"PASSWORD": {
+				"LABEL": "Kata sandi",
+				"PLACEHOLDER": "Masukkan Kata sandi",
+				"INFO": "Masukkan Kata sandi"
+			}
+		}
+	}
 }

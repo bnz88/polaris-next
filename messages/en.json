@@ -1,8 +1,90 @@
 {
-  "menuBar": {
-    "label": {
-      "home": "Home",
-      "register": "Register"
-    }
-  }
+	"ERR": {
+		"FORM": {
+			"INPUT": {
+				"COMMON": {
+					"REQUIRED": "Must be filled",
+					"MINLENGTH": "Minimum {1} characters",
+					"MAXLENGTH": "Maximum {1} characters",
+					"MIN": "Minimum Amount is {1}",
+					"MAX": "Maximum amount is {1}"
+				},
+				"PATTERN": {
+					"FIRSTNAME": "Only letters allowed",
+					"PHONE": "Enter the correct mobile number",
+					"EMAIL": "Please enter the correct email number"
+				}
+			}
+		}
+	},
+	"APP": {
+		"COMPONENTS": {
+			"FORM": {
+				"COMMON": {
+					"DATE": {
+						"DAY": "Day",
+						"MONTH": "Month",
+						"YEAR": "Year"
+					},
+					"MONTHS": {
+						"1": "January",
+						"2": "February",
+						"3": "March",
+						"4": "April",
+						"5": "May",
+						"6": "June",
+						"7": "July",
+						"8": "August",
+						"9": "September",
+						"10": "October",
+						"11": "November",
+						"12": "December"
+					}
+				}
+			}
+		}
+	},
+	"REGISTERFORM": {
+		"INPUT": {
+			"FIRSTNAME": {
+				"LABEL": "First name",
+				"PLACEHOLDER": "fill in first name",
+				"INFO": "fill in first name only"
+			},
+			"AMOUNT": {
+				"LABEL": "Amount",
+				"PLACEHOLDER": "Number of placeholders",
+				"INFO": "Amount of info"
+			},
+			"BIRTHDATE": {
+				"LABEL": "Date of birth",
+				"PLACEHOLDER": "Birthday",
+				"INFO": "Enter your date of birth"
+			},
+			"PHONE": {
+				"LABEL": "Phone number",
+				"PLACEHOLDER": "Fill in your mobile number",
+				"INFO": "Just fill in your cell phone number"
+			},
+			"EMAIL": {
+				"LABEL": "E-mail",
+				"PLACEHOLDER": "Email content",
+				"INFO": "just fill in the email"
+			}
+		}
+	},
+	"LOGINFORM": {
+		"INPUT": {
+			"USERNAME": {
+				"LABEL": "Player ID",
+				"PLACEHOLDER": "Enter Player ID",
+				"INFO": "Enter Player ID"
+			},
+			"PASSWORD": {
+				"LABEL": "Password",
+				"PLACEHOLDER": "Enter Password",
+				"INFO": "Enter Password"
+			}
+		}
+	}
 }

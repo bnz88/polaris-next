@@ -237,4 +237,7 @@
   .menubar {
     box-shadow: 1px 1px 2px 2px #000;
   }
+  .birthdateWrapper {
+    @apply flex gap-2 justify-evenly [&>div]:w-full;
+  }
 }

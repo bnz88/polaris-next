@@ -4,10 +4,10 @@ const DaftarMasuk = () => {
   return (
     <div className="last:mb-0">
       <div className="flex justify-between items-center gap-4 ">
-        <Link className="btn btn-secondary" href="/">
+        <Link className="btn btn-secondary" href="/daftar">
           Daftar
         </Link>
-        <Link className="btn  btn-primary" href="/">
+        <Link className="btn  btn-primary" href="/login">
           MASUK
         </Link>
       </div>
